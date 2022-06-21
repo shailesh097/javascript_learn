@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1 id = 'header'>Hello</h1>
+        <input type = 'text' id = 'inp'>
+        <button onclick = 'pressed()'>Enter</button>
+
+        <script>
+            function pressed(){
+                var tex = document.getElementById('inp').value
+                if (tex === 'red'){
+                    document.getElementById('header').style.color = 'red'
+                }else if(tex === 'green'){
+                    document.getElementById('header').style.color = 'green'
+                }else if (tex === 'blue'){
+                    document.getElementById('header').style.color = 'blue' 
+                }else{
+                    document.getElementById('header').style.color = 'black'
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<body>
+	<script type="text/javascript">
+		// Primitive data types
+		/*
+		string -     '' " "
+		number -     1, 1.1, 0.004, -3
+		boolean -    true, flase (var a = x < y will return true if value of x is less than y)
+		undefined -  Variables which are not defined in the program.
+		null - 		Like a empty container to add values later
+		*/
+
+		//var is used to declare a datatype
+		var x = 6
+		console.log(x)
+		x = 9
+		console.log(x)
+
+		// can change the value with different datatype
+		var name = 'Shailesh'
+		console.log(name)
+		name = x
+		console.log(name)
+
+		// operators in js
+		/*
+		+ = add
+		- = sub
+		* = multiply
+		/ = divide
+		% = modulus	
+		x += 5 add 5 to the value of x
+		*/
+
+		// we can concatinate intiger and string by converting int to string using addition operator
+		var z = 10
+		var name = 'Shailesh'
+		y = name + z
+		console.log(y) // output: 10Shailesh
+
+
+		// can use BEDMAS rule
+		var result = 2 * (4 + 3 / (7 - 4))
+		console.log(result)
+
+		// can use += operator on a string vaiable for string concatination
+		var f_name = 'Shailesh '
+		f_name += "Pokharel"
+		console.log(f_name)
+
+		//can use += operator on two string variables by creating another variable
+		var f_name = 'shailesh '
+		var l_name = 'pokharel'
+		var full_name = f_name + l_name
+		console.log(full_name)
+
+		//conditions and booleans
+			//comparision operators	
+			/* 
+			> is greater than
+			< is less than
+			>= is greater than or equal to
+			<= is less than or equal to
+			== is equal to value
+			=== is equal to value and is equal to type
+			!= is not equal to
+			!== is not equal to
+			&& if all the provided conditions are true then it will return true
+			|| if any one of the provided conditions are true then it will return true 
+			*/
+
+		var x = 2
+		var y = 3
+		var z = x <= y
+		console.log(z) // value of z will be a boolean (true or false) according to the values of x and y 					irrespective of the data type.
+		var m = x === y
+		console.log(m) // value of m will be a boolean(false in this condition) if both of the compared 				  variables have same values of same datatype.
+
+		// is not equal to regardless of data type
+		var h = x != y
+		console.log('h: ',h)
+		// is not equal to the value and the type
+		var j = x !== y
+		console.log('j :',j)
+
+		// chain comparisions
+		console.log('&&: ',x != y && x < y) // returns true since both the conditions are true
+		console.log('||: ',x != y || y < x) // returns true since one of the conditions is true
+
+		// !false returns true
+		console.log(!false)
+
+		//
+		
+	</script>	
+</body>
+</html>

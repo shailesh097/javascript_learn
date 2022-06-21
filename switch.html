@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <h1 id = 'header'>Hello</h1>
+        <input type = 'text' id = 'inp'> <br><br>
+        <button onclick = 'pressed()'>Enter</button><br><br>
+        
+        <p id = 'output'>Enter your age.</p>
+        <input type = 'text' id = 'age_check'><br><br>
+        <button onclick = 'age_check()'>Enter</button>
+
+        <script>
+            function pressed(){
+                var tex = document.getElementById('inp').value
+                switch (tex){
+                    case 'red':
+                        document.getElementById('header').style.color = 'red'
+                    break
+                    case 'blue':
+                        document.getElementById('header').style.color = 'blue'
+                    break
+                    default:
+                        document.getElementById('header').style.color = 'black'
+                    break
+                }
+            }
+            function age_check(){
+                var text = document.getElementById('age_check').value
+                var output = document.getElementById('output')
+
+                if (text < 18 && text > 0){
+                    output.innerHTML = 'You are below 18 years old.'
+                }else if(text == 18){
+                    output.innerHTML = 'You are 18 years old.'
+                }else if(text > 18){
+                    output.innerHTML = 'You are above 18 years old.'
+                }
+            }
+        </script>
+    </body>
+</html>
